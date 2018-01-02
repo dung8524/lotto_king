@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="referrer" content="always">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <!-- No cache -->
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+    <!-- Summary -->
+    <meta property="og:title" content="로또왕">
+    <meta property="og:url" content="http://www.lottoking.com">
+    <meta property="og:description" content="로또왕 웹사이트">
+    <!-- Title -->
+    <title>로또왕</title>
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- webfont -->
+    <link href='http://fonts.googleapis.com/earlyaccess/notosanskr.css' rel='stylesheet' type='text/css'>
+    <!-- JavaScript Framework / Plugin -->
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/4df80cbab3.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery.1.11.1.min.js"></script>
+    <!-- number countup -->
+    <script type="text/javascript" src="js/countUp.min.js"></script>
+    <!-- make -->
+    <script type="text/javascript" src="js/bk.js"></script>
+</head>
+<body>
+<header id="header">
+    <h1 class="bi">로또왕 <i class="fa fa-thumbs-o-up"></i></h1>
+</header>
+<div class="contents">
+    <div class="group introduce">
+        <h2 class="title"><span>로또왕 ?</span></h2>
+        <p class="txt">
+            인터넷에 떠도는 수 많은 로또번호 예측업체. 당연히 유료서비스이다. 가입하려면 일정 회비를 받고 회원들에게 당첨확률이 높은 번호 조합이라며
+            번호를 준다. 하지만 이는 <span class="red">100% 말도 안되는 소리</span>라고 감히 말할 수 있다. <br>
+            우선 8백만분의 1(1/8,145,060)의 로또 1등 번호를 예측해내는 것 자체가 불가능하다.<br><br>
+
+            그럼 그런 사이트에서 당첨자들이 후기를 남기는 것은 뭐냐고? 거짓 당첨 후기일까?<br><br>
+
+            거짓인지 진짜 후기인지는 알 방법이 없지만, 당첨이 완전 어려운 것은 아니다.<br>
+            왜냐하면 유료 가입서비스의 업체 회원이 80만명이고 이들 한명당 10게임씩만 구입하면 800만 게임을 구입하게 되는데
+            1등이 나올 확률이 엄청나게 높아질 수 밖에 없다.<br>
+            <strong class="cancel">(상식적으로 로또 번호가 예측이 가능하다면 뭐하러 번호를 제공하겠나.. 로또 당첨금으로 먹고살면 되지..)</strong><br>
+            (여담으로, 아쉽지만 로또 명당이라는 것도 존재할 수 없다. 최초 우연히 당첨되고 명당이라고 소문이 나면 사람이 몰리니 그 판매점의 당첨확률이 올라가는 것은 당연한 이치이다.)<br>
+            또 그들은 1,2등의 당첨수치만 공개한다. (즉 당첨되지 않은(꽝) 수십만개(예측)의 수치는 공개할 생각이 없다.)<br>
+            각각의 유료 번호 제공 서비스 나름의 로직은 존재할 지 모르겠지만 그 번호들이 당첨확률이 높다는 것은 <span class="cancel red">말도 안되는 얘기</span>이다.<br><br>
+
+            그래서 [로또왕]에서는 무료로, 무작위로 번호를 조합하여 제공한다.<br>
+            물론 여기서 나오는 번호 조합이 당첨확률이 높다는 말은 당연히 하지 않겠다. <br>
+            (아마도 로또 판매점에서 '자동'으로 체크하여 구입했을때와 같은 번호일 것이다.)<br>
+            그리고 이 곳에서 사용자가 많아진다면 당연히 고액이든 저액이든 당첨자도 여러 배출될 것이다.<br>
+            그렇게 유료 로또 번호 조합 서비스의 허무함을 증명해내고 싶다.<br>
+        </p>
+        <p class="p_info">* 발췌 - <a href="https://namu.wiki/w/%EB%A1%9C%EB%98%90" target="_blank">나무위키 - 로또</a></p>
+    </div>
+
+    <div class="group create_num">
+        <h2 class="title"><span>번호 추출해보기</span></h2>
+        <a href="javascript:;" class="btn_create"></a>
+        <div class="view">
+            <span id="num01">00</span>
+            <span id="num02">00</span>
+            <span id="num03">00</span>
+            <span id="num04">00</span>
+            <span id="num05">00</span>
+            <span id="num06">00</span>
+        </div>
+    </div>
+
+    <div class="group history">
+        <h2 class="title"><span>최근 784회(2017.12.09) 당첨 정보</span></h2>
+        <div class="data">
+            <div class="view">
+                <span>00</span>
+                <span>00</span>
+                <span>00</span>
+                <span>00</span>
+                <span>00</span>
+                + 보너스 번호
+                <span>00</span>
+            </div>
+            <dl class="price">
+                <dt>1등 총 예상당첨금</dt>
+                <dd>₩ <span id="history_num"></span></dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- ad -->
+    <div class="ad_a"></div>
+
+    <div class="group pic_nums">
+        <h2 class="title"><span>누적 최다 당첨 번호 10개 (1회  ~ 784회)<span></h2>
+        <ol class="list">
+            <li>27번 : 141회</li>
+            <li>1번 : 140회</li>
+            <li>43번 : 140회</li>
+            <li>34번 : 139회</li>
+            <li>20번 : 137회</li>
+            <li>17번 : 135회</li>
+            <li>4번 : 133회</li>
+            <li>40번 : 132회</li>
+            <li>37번 : 131회</li>
+            <li>33번 : 130회</li>
+            <li>8번 : 129회</li>
+        </ol>
+    </div>
+
+    <!-- ad -->
+    <div class="ad_a"></div>
+
+    <!-- epilogue -->
+    <div class="group epilogue">
+        <h2 class="title">로또왕 후기</h2>
+        <div class="list">
+            <ul>
+                <li>자동확률과 같은거죠?</li>
+                <li>앞으로 로또왕 번호만 따라간다.</li>
+                <li>괜히 유료서비스 가입해서 1년에 25만원 날렸네 ㅠㅠ</li>
+                <li>한방에 4등 당첨ㅋㅋㅋㅋㅋㅋ</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- btn top -->
+    <a href="javascript:;" id="btn_top" class="btn_top">TOP</a>
+</div>
+<!-- footer -->
+<footer id="footer">
+    <p class="total_info">* 자료 출처 : <a href="http://nlotto.co.kr/common.do?method=main" target="_blank">나눔로또</a> 사이트</p>
+    <p class="info">문의 : inner_pass@naver.com</p>
+    <p class="copyright">Copyright © 로또왕 All Rights Reserved.</p>
+</footer>
+
+<!-- page bar process guide -->
+<div class="process_box">
+    <div class="bar"></div>
+</div>
+
+<script>
+$(document).ready(function(){
+
+    /*
+        로또당첨번호 가져오기
+    $.ajax({
+        type: 'GET',
+        url: 'http://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=784',
+        success: function(json){
+            var list = $.parseJSON(json);
+            alert(json);
+        }
+    });
+    */
+
+    //number count
+    var options = {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.'
+    }
+    var historyPrice = new CountUp('history_num', 0, 887415693, 0, 4, {options});
+    setTimeout(function(){
+        historyPrice.start();
+    }, 3000);
+
+
+    //btn click
+    $('.btn_create').on('click', function(){
+        createNumber();
+    });
+
+    //btn top
+    $('#btn_top').on('click', function(){
+        $('html, body').delay(100).animate({
+            scrollTop: 0
+        }, 400);
+    });
+});
+
+//create six numbers
+function createNumber(){
+    var numberBox = new Array(6);
+    var cnt = 0;
+    var flag = true;
+    while(cnt < 6){
+        var number;
+        number = parseInt(Math.random()*45)+1
+        for(var i = 0; i < cnt; i++)
+        if(numberBox[i] == number) flag = false;
+        if(flag){
+            numberBox[cnt] = number;
+            cnt++;
+        }
+        flag = true;
+    }
+    var options = {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.'
+    }
+    for(var i = 0; i <= 6; i++){
+        var numCount = 'numCount0' + i;
+        var numCount = new CountUp('num0'+ i, 0, numberBox[i-1], 0, 4, {options});
+        numCount.start();
+    }
+}
+
+//page scroll percent guide, scroll event
+$(window).scroll(function(){
+    var scrollTop = $(window).scrollTop();
+    var docHeight = $(document).height();
+    var winHeight = $(window).height();
+    var scrollPercent = (scrollTop) / (docHeight - winHeight);
+    var scrollPercentRounded = Math.round(scrollPercent*100);
+    $('.process_box .bar').css({
+        'width': scrollPercentRounded + '%'
+    });
+
+    if(scrollTop > 100){
+        $('#btn_top').fadeIn(300);
+    }else{
+        $('#btn_top').fadeOut(300);
+    }
+});
+</script>
+
+</body>
+</html>
